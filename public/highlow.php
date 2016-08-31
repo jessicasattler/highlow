@@ -15,9 +15,16 @@
 
 if ($argc == 3){
 
-$min = $argv[1];
-$max = $argv[2];
+	if ($argv[1]< $argv[2]){
+		$min = $argv[1];
+		$max = $argv[2];
+	}else{
+		$min = $argv[2];
+		$max = $argv[1];
+	}
 
+
+//add if (!is_numeric($min))
 var_dump($argc);
 var_dump($argv);
 }else{
@@ -71,5 +78,11 @@ if ($userGuess < $randomNumber){
 
 //ask user if they want to play again
 //keep track of their guesses 
-//make it pretty 
+//make sure user gives us a valid number 
+
+// 
+
+
+////////
+
  ?>
