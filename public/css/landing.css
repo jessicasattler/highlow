@@ -1,9 +1,27 @@
 .container{
 	color:white;
 	background-color:grey;
-	width:25vh;
-	height:25vh;
-	border-radius: 15px;
+	border-radius: 10px;
 	text-align: center;
 }
 
+.card{
+	width:25px;
+	height:25px;
+}
+#card1{
+	margin: 25px;
+
+}
+
+#card2{
+	margin: 25px;
+}
+
+#card3{
+	margin: 25px;
+}
+
+#card4{
+	margin: 25px;
+}
