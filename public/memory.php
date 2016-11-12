@@ -4,33 +4,83 @@
 	<title>Memory!</title>
 	 <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="/css/landing.css">
 </head>
 <body>
 	<div class="container">
-		<div class="card">
-			<div id="card1">
-				<h4>Regular Show 1</h4>
+<!-- 	row -->
+		<div class="row"> 
+			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
+				<div class="card ">
+					<h4>Regular Show 1</h4>
+				</div>	
 			</div>
-		</div>	
-
-		<div class="card">
-			<div id="card2">
-				<h4>Regular Show 2</h4>
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 1</h4>
+				</div>	
 			</div>
-		</div>	
-
-		<div class="card">
-			<div id="card3">
-				<h4>Regular Show 3</h4>
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 1</h4>
+				</div>	
 			</div>
-		</div>	
-	
-		<div class="card">
-			<div id="card4">
-				<h4>Regular Show 4</h4>
+		</div>
+<!-- row -->
+		<div class="row">
+			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
+				<div class="card">
+					<h4>Regular Show 2</h4>
+				</div>	
 			</div>
-		</div>	
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 2</h4>
+				</div>	
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 2</h4>
+				</div>	
+			</div>
+		</div>
+<!-- row -->
+		<div class="row">
+			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
+				<div class="card">
+					<h4>Regular Show 3</h4>
+				</div>	
+			</div>
+			<div class="col-xs-4  col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 3</h4>
+				</div>	
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 3</h4>
+				</div>	
+			</div>
+		</div>
+<!-- row -->
+		<div class="row">
+			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
+				<div class="card">
+					<h4>Regular Show 4</h4>	
+				</div>	
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 4</h4>
+				</div>	
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class="card ">
+					<h4>Regular Show 4</h4>
+				</div>	
+			</div>
+		</div>
 	</div>
 
 </body>
