@@ -6,6 +6,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="/css/landing.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Frijole" rel="stylesheet">
 </head>
 <body>
 	<div class="container">

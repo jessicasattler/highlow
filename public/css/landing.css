@@ -1,5 +1,5 @@
 .container{
-	color:white;
+	color:blue;
 	background-image: url("/img/regular-show.jpg");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -10,6 +10,8 @@
 	background-color:rgba(255, 255, 255, .5);
 	height:250px;
 	border-radius:5px;
+	font-family: 'Bungee Outline', cursive;
+	font-family: 'Frijole', cursive;
 }
 
 
