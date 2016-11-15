@@ -14,17 +14,17 @@
 		<div class="row"> 
 			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
 				<div class="card ">
-					<h4>Regular Show 1</h4>
+					<!-- <h4>Regular Show 1</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 1</h4>
+					<!-- <h4>Regular Show 1</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 1</h4>
+					<!-- <h4>Regular Show 1</h4> -->
 				</div>	
 			</div>
 		</div>
@@ -32,17 +32,17 @@
 		<div class="row">
 			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
 				<div class="card">
-					<h4>Regular Show 2</h4>
+					<!-- <h4>Regular Show 2</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 2</h4>
+					<!-- <h4>Regular Show 2</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 2</h4>
+					<!-- <h4>Regular Show 2</h4> -->
 				</div>	
 			</div>
 		</div>
@@ -50,17 +50,17 @@
 		<div class="row">
 			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
 				<div class="card">
-					<h4>Regular Show 3</h4>
+					<!-- <h4>Regular Show 3</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4  col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 3</h4>
+					<!-- <h4>Regular Show 3</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 3</h4>
+					<!-- <h4>Regular Show 3</h4> -->
 				</div>	
 			</div>
 		</div>
@@ -68,17 +68,17 @@
 		<div class="row">
 			<div class="col-xs-4 col-sm-3 col-sm-offset-1">
 				<div class="card">
-					<h4>Regular Show 4</h4>	
+					<!-- <h4>Regular Show 4</h4>	 -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 4</h4>
+					<!-- <h4>Regular Show 4</h4> -->
 				</div>	
 			</div>
 			<div class="col-xs-4 col-sm-3">
 				<div class="card ">
-					<h4>Regular Show 4</h4>
+					<!-- <h4>Regular Show 4</h4> -->
 				</div>	
 			</div>
 		</div>
