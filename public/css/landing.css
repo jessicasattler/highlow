@@ -8,7 +8,7 @@
 .card{
 	margin-top: 25px;
 	height:250px;
-	background-image: url("/img/regular-show.jpg");
+	background-image: url("/img/CardBack.jpg");
 	background-repeat: no-repeat;
 	background-color: white;
 	background-size: cover;
