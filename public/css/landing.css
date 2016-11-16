@@ -8,12 +8,19 @@
 .card{
 	margin-top: 25px;
 	height:250px;
-	background-repeat: no-repeat;
 	background-image: url("/img/regular-show.jpg");
-	background-size: contain;
-	border-radius:5px;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: cover;
+	border-radius:20px;
 	font-family: 'Bungee Outline', cursive;
 	font-family: 'Frijole', cursive;
+	width: 100%;
+	padding-top: 140%;
+}
+
+.cont{
+
 }
 
 body{
