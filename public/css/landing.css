@@ -1,6 +1,4 @@
 .container{
-	/*background-image: url("/img/card.jpg");*/
-	/*background-repeat: repeat;*/
 	background-size: contain;
 	text-align: center;
 }
@@ -25,4 +23,17 @@
 
 body{
 	background-image: url("/img/card.jpg");
+}
+
+.start{
+	position: fixed;
+	left:653px;
+	top:300px;
+	width:130px;
+	height:70px;
+	font-size: 20px;
+	border-radius: 20px;
+	text-align: center;
+
+	
 }
