@@ -87,15 +87,7 @@
 					</div>	
 				</div>
 				<div class="col-xs-10 col-sm-6 col-lg-3">
-					<div class="card ">
-					</div>	
-				</div>
-				<div class="col-xs-10 col-sm-6 col-lg-3">
-					<div class="card ">
-					</div>	
-				</div>
-				<div class="col-xs-10 col-sm-6 col-lg-3">
-					<div class="card ">
+					<div class="card">
 					</div>	
 				</div>
 				<div class="col-xs-10 col-sm-6 col-lg-3">
@@ -103,15 +95,23 @@
 					</div>	
 				</div>
 				<div class="col-xs-10 col-sm-6 col-lg-3">
-					<div class="card ">
+					<div class="card">
 					</div>	
 				</div>
 				<div class="col-xs-10 col-sm-6 col-lg-3">
-					<div class="card ">
+					<div class="card">
 					</div>	
 				</div>
 				<div class="col-xs-10 col-sm-6 col-lg-3">
-					<div class="card ">
+					<div class="card">
+					</div>	
+				</div>
+				<div class="col-xs-10 col-sm-6 col-lg-3">
+					<div class="card">
+					</div>	
+				</div>
+				<div class="col-xs-10 col-sm-6 col-lg-3">
+					<div class="card">
 					</div>	
 				</div>
 			<button type="button" class="btn btn-lg btn-danger start">START</button>
