@@ -1,5 +1,23 @@
  "use strict";
 $(document).ready(function() {
+	var pictures = ["rigby", "mordecai","pops", "highfive",
+		"muscleman","benson","thomas","skipps","eileen",
+		"cloudyjane","margaret","partyhorse","rigby", "mordecai","pops", "highfive",
+		"muscleman","benson","thomas","skipps","eileen",
+		"cloudyjane","margaret","partyhorse"];
+
+	var shufflePictures = function(listOfPictures){
+		//for each element in the listOfPictures array, create an empty string
+		//element
+		var shuffled = [for (x of listOfPictures) ""];
+		var i;
+		for(i=0;i<listOfPictures.length;i+=1){
+
+		}
+
+
+		return shuffled;
+	}
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed
