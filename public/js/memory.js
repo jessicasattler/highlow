@@ -9,15 +9,24 @@ $(document).ready(function() {
 	var shufflePictures = function(listOfPictures){
 		//for each element in the listOfPictures array, create an empty string
 		//element
-		var shuffled = [for (x of listOfPictures) ""];
+		var shuffled = ["","","","","","","","","","","","","","","","",
+			"","","","","","","",""];
 		var i;
+
 		for(i=0;i<listOfPictures.length;i+=1){
+			var randomNumber = parseInt((Math.random()*24)+0);
 
+			while(shuffled[randomNumber] != ""){
+				randomNumber = parseInt((Math.random()*24)+0);
+			}
+
+			shuffled[randomNumber] = listOfPictures[i];
 		}
-
 
 		return shuffled;
 	}
+
+	console.log(shufflePictures(pictures));
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed
