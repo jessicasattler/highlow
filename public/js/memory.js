@@ -39,7 +39,7 @@ $(document).ready(function() {
 		if(index % 2 == 0){
 			$("#firstContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
 		}else{
-			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
+			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div></div>");
 		}
 	});
 
