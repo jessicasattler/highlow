@@ -9,15 +9,20 @@ $(document).ready(function() {
 	var shufflePictures = function(listOfPictures){
 		//for each element in the listOfPictures array, create an empty string
 		//element
-		var shuffled = ["","","","","","","","","","","","","","","","",
-			"","","","","","","",""];
+		var shuffled = [];
+		var j;
 		var i;
 
+		for (j = 0;j < listOfPictures.length; j+=1){
+			shuffled[j] = "";
+		}
+
+
 		for(i=0;i<listOfPictures.length;i+=1){
-			var randomNumber = parseInt((Math.random()*24)+0);
+			var randomNumber = parseInt((Math.random()*listOfPictures.length)+0);
 
 			while(shuffled[randomNumber] != ""){
-				randomNumber = parseInt((Math.random()*24)+0);
+				randomNumber = parseInt((Math.random()*listOfPictures.length)+0);
 			}
 
 			shuffled[randomNumber] = listOfPictures[i];
@@ -26,7 +31,15 @@ $(document).ready(function() {
 		return shuffled;
 	}
 
-	console.log(shufflePictures(pictures));
+	var shuffled = shufflePictures(pictures);
+
+	shuffled.forEach(function(element,index, array){
+		if(index % 2 == 0){
+			$("#firstContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
+		}else{
+			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
+		}
+	});
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed

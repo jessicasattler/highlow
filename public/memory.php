@@ -12,9 +12,9 @@
 	<div class="container">
 <!-- 	row -->
 		<div class="row"> 
-			<div class="container col-xs-6">
+			<div class="container col-xs-6" id="firstContainer">
 
-				<div class="col-xs-10 col-sm-6 col-lg-3 ">
+<!-- 				<div class="col-xs-10 col-sm-6 col-lg-3 ">
 					<div class="card ">
 					</div>	
 				</div>
@@ -62,10 +62,10 @@
 				<div class="col-xs-10 col-sm-6 col-lg-3">
 					<div class="card ">
 					</div>	
-				</div>
+				</div> -->
 			</div> <!-- closes first smaller container -->
-			<div class="container col-xs-6">
-
+			<div class="container col-xs-6" id="secondContainer">
+<!-- 
 				<div class="col-xs-10 col-sm-6 col-lg-3">
 					<div class="card">
 					</div>	
@@ -113,7 +113,7 @@
 				<div class="col-xs-10 col-sm-6 col-lg-3">
 					<div class="card">
 					</div>	
-				</div>
+				</div> -->
 			<button type="button" class="btn btn-lg btn-danger start">START</button>
 			</div> <!-- closes second smaller container -->
 		</div> <!-- closes row -->
