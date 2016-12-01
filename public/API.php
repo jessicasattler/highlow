@@ -13,5 +13,7 @@ $retrieved = $retrievePics->fetch();
 
 var_dump($retrieved);
 
+
+
  ?>
 
