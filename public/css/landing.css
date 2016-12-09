@@ -39,10 +39,10 @@ body{
 }
 
 /*media query for start button*/
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
 	.btn.btn-lg.btn-danger.start{
 		width: 20px;
 		margin-top: 20px;
 		
 	}
-}
+}*/

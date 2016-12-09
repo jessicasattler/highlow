@@ -42,6 +42,7 @@ $(document).ready(function() {
 			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div></div>");
 		}
 	});
+		var imageUrl;
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed
@@ -57,15 +58,18 @@ $(document).ready(function() {
 			dataType: 'json',
 			success: function(data)
 			{
-				var imageUrl = data[2];
+				imageUrl = data[2];
 
-				// $(this).css('background-image', 'url("'+imageUrl+'")');
-				 $(this).css('background-image', 'url(" '+imageUrl+' ")');
+	
 
 				console.log(imageUrl);
 
+				// return imageURL;
+
 			}
 		});
+				 // $(this).css('background-image', 'url("/img/rigby.png")');
+				 $(this).css('background-image', 'url('+imageUrl+')');
 		 
 		});
 	});
