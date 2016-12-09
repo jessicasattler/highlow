@@ -1,9 +1,9 @@
  "use strict";
 $(document).ready(function() {
 	var pictures = ["rigby", "mordecai","pops", "highfive",
-		"muscleman","benson","thomas","skipps","eileen",
+		"muscleman","benson","thomas","skips","eileen",
 		"cloudyjane","margaret","partyhorse","rigby", "mordecai","pops", "highfive",
-		"muscleman","benson","thomas","skipps","eileen",
+		"muscleman","benson","thomas","skips","eileen",
 		"cloudyjane","margaret","partyhorse"];
 
 	var shufflePictures = function(listOfPictures){
@@ -49,7 +49,23 @@ $(document).ready(function() {
 		// cards only become clickable after "start" button has been pressed
 		$('.card').click(function(){
 		// when a card is clicked, background-image of card changes
-		$(this).css('background-image', 'url("/img/rigby.png")');
+		// $(this).css('background-image', 'url("/img/rigby.png")');
+		$.ajax({
+			url: 'API.php',
+			data: "name=" + $(this).attr("data-character"),
+
+			dataType: 'json',
+			success: function(data)
+			{
+				var imageUrl = data[2];
+
+				// $(this).css('background-image', 'url("'+imageUrl+'")');
+				 $(this).css('background-image', 'url(" '+imageUrl+' ")');
+
+				console.log(imageUrl);
+
+			}
+		});
 		 
 		});
 	});
