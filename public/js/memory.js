@@ -43,6 +43,7 @@ $(document).ready(function() {
 		}
 	});
 		var currentCard;
+		var count = 0;
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed
@@ -63,16 +64,25 @@ $(document).ready(function() {
 
 	
 				currentCard.css('background-image', 'url('+imageUrl+')');
-				console.log(imageUrl);
-				console.log("AJAX");
-
-				// return imageURL;
+				
+				
 
 			}
+
+
 		});
-				 // $(this).css('background-image', 'url("/img/rigby.png")');
-				 // $(this).css('background-image', 'url('+imageUrl+')');
-				 // console.log('event listener');
+			count = count + 1;
+
+			if(count == 2){
+				//if (cards are the same){have the cards stayed flipped over and gray out and turn off
+				//event listeners on them
+				
+				//}else{
+					//have the cards flip back over after half a second has passed
+				//}
+				count = 0;
+			}
+				 
 		 
 		});
 	});
