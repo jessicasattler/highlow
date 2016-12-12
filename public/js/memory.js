@@ -42,13 +42,14 @@ $(document).ready(function() {
 			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div></div>");
 		}
 	});
-		var imageUrl;
+		var currentCard;
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed
 		$('.start').fadeOut();
 		// cards only become clickable after "start" button has been pressed
 		$('.card').click(function(){
+		currentCard = $(this)
 		// when a card is clicked, background-image of card changes
 		// $(this).css('background-image', 'url("/img/rigby.png")');
 		$.ajax({
@@ -58,18 +59,20 @@ $(document).ready(function() {
 			dataType: 'json',
 			success: function(data)
 			{
-				imageUrl = data[2];
+				var imageUrl = data[2];
 
 	
-
+				currentCard.css('background-image', 'url('+imageUrl+')');
 				console.log(imageUrl);
+				console.log("AJAX");
 
 				// return imageURL;
 
 			}
 		});
 				 // $(this).css('background-image', 'url("/img/rigby.png")');
-				 $(this).css('background-image', 'url('+imageUrl+')');
+				 // $(this).css('background-image', 'url('+imageUrl+')');
+				 // console.log('event listener');
 		 
 		});
 	});
