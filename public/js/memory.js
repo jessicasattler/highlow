@@ -43,7 +43,10 @@ $(document).ready(function() {
 		}
 	});
 		var currentCard;
-		var count = 0;
+		//Keeps track of the cards currently selected
+		var selected = [];
+		//Counts the number of matches
+		var matches = 0;
 
 	$('.start').click(function(){
 		//start button fades out after it is pressed
@@ -65,23 +68,35 @@ $(document).ready(function() {
 	
 				currentCard.css('background-image', 'url('+imageUrl+')');
 				
-				
+				// Pushes the selected card to the array
+				selected.push(currentCard);
 
-			}
-
-
-		});
-			count = count + 1;
-
-			if(count == 2){
+				if(selected.length == 2){
+					if(selected[0].attr('data-character') == selected[1].attr('data-character')) {
+						selected[0].css('opacity', '0.6');
+						selected[1].css('opacity', '0.6');
+						selected[0].off();
+						selected[1].off();
+						matches += 1;
+					} else {
+						selected[0].delay(1000).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
+						selected[1].delay(1000).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
+						
+					}
+					selected = [];
 				//if (cards are the same){have the cards stayed flipped over and gray out and turn off
 				//event listeners on them
 				
 				//}else{
 					//have the cards flip back over after half a second has passed
 				//}
-				count = 0;
+				}
+
 			}
+
+
+		});
+			
 				 
 		 
 		});
