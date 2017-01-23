@@ -37,9 +37,9 @@ $(document).ready(function() {
 	//assigns characters from the shuffled array to div elements at random
 	shuffled.forEach(function(element,index, array){
 		if(index % 2 == 0){
-			$("#firstContainer").prepend("<div id="+index+" class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
+			$("#firstContainer").prepend("<div  class=\"col-xs-10 col-sm-6 col-lg-3\"><div id="+index+" class=\"card \" data-character=\""+element+"\"></div>	</div>");
 		}else{
-			$("#secondContainer").prepend("<div id="+index+" class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div></div>");
+			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div id="+index+" class=\"card \" data-character=\""+element+"\"></div></div>");
 		}
 	});
 		var currentCard;
@@ -54,6 +54,7 @@ $(document).ready(function() {
 		// cards only become clickable after "start" button has been pressed
 		$('.card').click(function(){
 		currentCard = $(this)
+		
 		// when a card is clicked, background-image of card changes
 		// $(this).css('background-image', 'url("/img/rigby.png")');
 		$.ajax({
@@ -72,12 +73,12 @@ $(document).ready(function() {
 				if (selected.length == 0){
 					selected.push(currentCard);
 				}else{
+					console.log(selected[0].attr("id")+" current card "+currentCard.attr("id"));
 					if(selected[0].attr("id")!=currentCard.attr("id")){
 						selected.push(currentCard);
 					}
 				}
 				
-
 				if(selected.length == 2){
 					if(selected[0].attr('data-character') == selected[1].attr('data-character')) {
 						selected[0].css('opacity', '0.6');
