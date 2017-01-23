@@ -37,9 +37,9 @@ $(document).ready(function() {
 	//assigns characters from the shuffled array to div elements at random
 	shuffled.forEach(function(element,index, array){
 		if(index % 2 == 0){
-			$("#firstContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
+			$("#firstContainer").prepend("<div id="+index+" class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div>	</div>");
 		}else{
-			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div></div>");
+			$("#secondContainer").prepend("<div id="+index+" class=\"col-xs-10 col-sm-6 col-lg-3\"><div class=\"card \" data-character=\""+element+"\"></div></div>");
 		}
 	});
 		var currentCard;
@@ -69,7 +69,14 @@ $(document).ready(function() {
 				currentCard.css('background-image', 'url('+imageUrl+')');
 				
 				// Pushes the selected card to the array
-				selected.push(currentCard);
+				if (selected.length == 0){
+					selected.push(currentCard);
+				}else{
+					if(selected[0].attr("id")!=currentCard.attr("id")){
+						selected.push(currentCard);
+					}
+				}
+				
 
 				if(selected.length == 2){
 					if(selected[0].attr('data-character') == selected[1].attr('data-character')) {
@@ -79,8 +86,8 @@ $(document).ready(function() {
 						selected[1].off();
 						matches += 1;
 					} else {
-						selected[0].delay(1000).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
-						selected[1].delay(1000).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
+						selected[0].delay(500).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
+						selected[1].delay(500).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
 						
 					}
 					selected = [];
