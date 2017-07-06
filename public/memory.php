@@ -18,7 +18,7 @@
 			</div> <!-- closes first smaller container -->
 			<div class="container col-xs-6" id="secondContainer">
 
-			<button type="button" class="btn btn-lg btn-danger start">START</button>
+			<button type="button" class="btn btn-lg btn-danger start">START!</button>
 			</div> <!-- closes second smaller container -->
 		</div> <!-- closes row -->
 	</div> <!-- closes container -->
