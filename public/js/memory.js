@@ -37,9 +37,9 @@ $(document).ready(function() {
 	//assigns characters from the shuffled array to div elements at random
 	shuffled.forEach(function(element,index, array){
 		if(index % 2 == 0){
-			$("#firstContainer").prepend("<div  class=\"col-xs-10 col-sm-6 col-lg-3\"><div id="+index+" class=\"card \" data-character=\""+element+"\"></div>	</div>");
+			$(".firstContainer").prepend("<div  class=\"col-xs-6 col-sm-3 col-md-2  col-lg-2\"><div id="+index+" class=\"card \" data-character=\""+element+"\"></div>	</div>");
 		}else{
-			$("#secondContainer").prepend("<div class=\"col-xs-10 col-sm-6 col-lg-3\"><div id="+index+" class=\"card \" data-character=\""+element+"\"></div></div>");
+			$(".secondContainer").prepend("<div class=\"col-xs-6 col-sm-3 col-md-2 col-lg-2\"><div id="+index+" class=\"card \" data-character=\""+element+"\"></div></div>");
 		}
 	});
 		var currentCard;

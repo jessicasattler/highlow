@@ -9,19 +9,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Frijole" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
+	<div class="container firstContainer secondContainer">
 <!-- 	row -->
-		<div class="row"> 
-			<div class="container col-xs-6" id="firstContainer">
+		<!-- <div class="row">  -->
+			<!-- <div class="container col-xs-6" id="firstContainer">
 
 
-			</div> <!-- closes first smaller container -->
-			<div class="container col-xs-6" id="secondContainer">
+			</div>  --><!-- closes first smaller container -->
+			<!-- <div class="container col-xs-6" id="secondContainer"> -->
 
-			<button type="button" class="btn btn-lg btn-danger start">START</button>
-			</div> <!-- closes second smaller container -->
+			<button type="button" class="btn btn-lg btn-danger 	 start">START</button>
+			<!-- </div>  --><!-- closes second smaller container -->
 		</div> <!-- closes row -->
-	</div> <!-- closes container -->
+<!-- 	</div> --> <!-- closes container -->
 
 	<script src="/js/jQuery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
