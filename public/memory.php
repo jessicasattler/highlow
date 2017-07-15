@@ -11,17 +11,17 @@
 <body>
 	<div class="container firstContainer secondContainer">
 <!-- 	row -->
-		<!-- <div class="row">  -->
-			<!-- <div class="container col-xs-6" id="firstContainer">
+		<div class="row"> 
+			<div class="container col-xs-6" id="firstContainer">
 
 
-			</div>  --><!-- closes first smaller container -->
-			<!-- <div class="container col-xs-6" id="secondContainer"> -->
-
+			</div> <!--  closes first smaller container -->
+			<div class="container col-xs-6" id="secondContainer">
 			<button type="button" class="btn btn-lg btn-danger 	 start">START</button>
-			<!-- </div>  --><!-- closes second smaller container -->
+			<h2 id="winningMessage">Congratulations! You won!</h2>
+			</div>  <!-- closes second smaller container -->
 		</div> <!-- closes row -->
-<!-- 	</div> --> <!-- closes container -->
+	</div> <!-- closes container --> 
 
 	<script src="/js/jQuery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

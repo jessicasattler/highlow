@@ -86,6 +86,10 @@ $(document).ready(function() {
 						selected[0].off();
 						selected[1].off();
 						matches += 1;
+						if (matches == pictures.length/2){
+							$(".card").hide();
+							$("#winningMessage").css('display','block');
+						}
 					} else {
 						selected[0].delay(500).animate({backgroundImage: 'url("/img/CardBack.jpg")'});
 						selected[1].delay(500).animate({backgroundImage: 'url("/img/CardBack.jpg")'});

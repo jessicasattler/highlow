@@ -38,6 +38,10 @@ body{
 	
 }
 
+#winningMessage{
+	display: none;
+}
+
 /*media query for start button*/
 /*@media screen and (max-width: 700px) {
 	.btn.btn-lg.btn-danger.start{
