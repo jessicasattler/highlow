@@ -26,14 +26,15 @@ body{
 }
 
 .start{
-	/*position: fixed;*/
-	/*left:610px;
-	top:300px;*/
-	/*width:230px;
-	height:100px;*/
+	position: relative;
+	left:250px;
+	top:-525px;
+	width:230px;
+	height:100px;
 	font-size: 20px;
 	border-radius: 20px;
 	text-align: center;
+
 
 	
 }
