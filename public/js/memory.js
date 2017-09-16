@@ -1,5 +1,6 @@
  "use strict";
 $(document).ready(function() {
+	alert("Hello! I am an alert box!!");
 	var pictures = ["rigby", "mordecai","pops", "highfive",
 		"muscleman","benson","thomas","skips","eileen",
 		"cloudyjane","margaret","partyhorse","rigby", "mordecai","pops", "highfive",

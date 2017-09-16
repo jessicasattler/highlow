@@ -25,7 +25,7 @@ body{
 	background-image: url("/img/card.jpg");
 }
 
-@media screen and (max-width: 1056px) and (min-width: 507px) {
+/*@media screen and (max-width: 1056px) and (min-width: 507px) {
 	.start{
 		position: relative;
 		left:250px;
@@ -37,6 +37,19 @@ body{
 		text-align: center;
 	}
 }
+@media screen and (max-width: 1056px) and (min-width: 507px) {
+	.start{
+		position: relative;
+		left:250px;
+		top:-525px;
+		width:230px;
+		height:100px;
+		font-size: 20px;
+		border-radius: 20px;
+		text-align: center;
+	}
+}*/
+
 /*.start{
 	position: relative;
 	left:250px;
@@ -56,10 +69,11 @@ body{
 }
 
 /*media query for start button*/
-/*@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 	.btn.btn-lg.btn-danger.start{
-		width: 20px;
+		width: 200px;
 		margin-top: 20px;
+		clear:left;
 		
 	}
-}*/
+}
