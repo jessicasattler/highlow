@@ -1,6 +1,7 @@
 .container{
 	background-size: contain;
 	text-align: center;
+	position: relative;
 }
 
 .card{
@@ -23,6 +24,29 @@
 
 body{
 	background-image: url("/img/card.jpg");
+}
+@media screen and (min-width: 1200px) {
+	.start{
+		position: absolute;
+		bottom: 465px;
+		left:260px;
+	}
+}
+@media screen and (min-width:990px) and (max-width: 1199px)
+{
+	.start{
+		position:absolute;
+		bottom: 370px;
+		left:220px;
+	}
+}
+@media screen and (min-width:770px) and (max-width: 989px)
+{
+	.start{
+		position:absolute;
+		bottom:670px;
+		left:245px;
+	}
 }
 
 /*@media screen and (max-width: 1056px) and (min-width: 507px) {
@@ -48,7 +72,7 @@ body{
 		border-radius: 20px;
 		text-align: center;
 	}
-}*/
+}
 
 /*.start{
 	position: relative;

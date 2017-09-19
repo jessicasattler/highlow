@@ -19,17 +19,17 @@
 <!-- 	row -->
 		<div class="row"> 
 			<div class="container col-xs-1 col-md-2 col-lg-2" id="firstContainer">
-			<!-- <div class="container col-xs-2" id="firstContainer"> -->
 
 			</div> <!--  closes first smaller container -->
-			<!-- <div class="container col-xs-1 col-md-2 col-lg-2" id="secondContainer"> -->
+			
 			<div class="container col-xs-8 col-lg-8 col-xl-8" id="firstContainer">
-				
-			<button type="button" class="btn btn-lg btn-danger 	 start">START</button>
+
+			<button type="button" class="btn btn-lg btn-danger start col-sm-3 col-md-4">START</button>
 			<h2 id="winningMessage">Congratulations! You won!</h2>
 			</div>  <!-- closes second smaller container -->
 		</div> <!-- closes row -->
 	</div> <!-- closes container --> 
+	<!-- game plan is to add sweet alerts and replace red button -->
 
 	<script src="/js/jQuery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
